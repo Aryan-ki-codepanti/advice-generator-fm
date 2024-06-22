@@ -74,8 +74,8 @@ body {
     padding-block: 1.5em;
 }
 
-.divider svg path {
-    fill: var(--Grayish_Blue);
+.mobile-div {
+    display: none;
 }
 
 .dice:hover {
@@ -95,4 +95,21 @@ body {
 
     position: absolute;
     bottom: -1.7em;
+}
+
+@media screen and (max-width: 450px) {
+    .content {
+        width: 80%;
+    }
+
+    .divider {
+        overflow: hidden;
+    }
+
+    .mobile-div {
+        display: block;
+    }
+    .desktop-div {
+        display: none;
+    }
 }

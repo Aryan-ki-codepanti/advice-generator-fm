@@ -17,13 +17,14 @@
     <body>
         <div class="content">
             <div class="advice-box">
-                <p>Advice #23</p>
+                <p>Advice #<span>23</span></p>
                 <p>
                     "It is easy to sit up and take notice, what's difficult is
                     getting up and taking action"
                 </p>
                 <div class="divider">
                     <svg
+                        class="desktop-div"
                         width="444"
                         height="16"
                         xmlns="http://www.w3.org/2000/svg"
@@ -39,8 +40,26 @@
                             </g>
                         </g>
                     </svg>
+
+                    <svg
+                        class="mobile-div"
+                        width="295"
+                        height="16"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <g fill="none" fill-rule="evenodd">
+                            <path
+                                fill="#4F5D74"
+                                d="M0 8h122v1H0zM173 8h122v1H173z"
+                            />
+                            <g transform="translate(138)" fill="#CEE3E9">
+                                <rect width="6" height="16" rx="3" />
+                                <rect x="14" width="6" height="16" rx="3" />
+                            </g>
+                        </g>
+                    </svg>
                 </div>
-                <div class="dice">
+                <div class="dice" onclick="fetchSetQuote()">
                     <svg
                         width="24"
                         height="24"
