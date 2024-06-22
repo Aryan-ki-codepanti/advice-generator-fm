@@ -70,6 +70,10 @@ body {
     font-weight: 600;
 }
 
+.divider img {
+    width: 100%;
+    object-fit: cover;
+}
 .divider {
     padding-block: 1.5em;
 }
